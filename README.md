@@ -37,7 +37,7 @@ OS: **Ubuntu (Linux)**
 - php
 - php-mysql connector
 
-Install and Start all the services.
+Install, Start and Enable all the services.
 
 ### 3. Create files
 - index. html – Landing page
