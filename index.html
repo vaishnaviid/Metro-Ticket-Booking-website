@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune Metro Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img src="logo.jpg" alt="Pune Metro Logo" class="logo">
+        <h1>Pune Metro Ticket Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#booking">Book Ticket</a></li>
+                <li><a href="#map">Metro Map</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Fast. Safe. Efficient.</h2>
+            <p>Travel with comfort using Pune Metro</p>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <h2>Book Your Ticket</h2>
+            <form id="ticketForm" action="book.php" method="POST" class="form-container">
+
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="source">Source Station:</label>
+                    <select id="source" name="source" required>
+                        <option value="">Select Source</option>
+                        <option value="PCMC Bhavan">PCMC Bhavan</option>
+                        <option value="Sant Tukaram Nagar">Sant Tukaram Nagar</option>
+                        <option value="Kasarwadi">Kasarwadi</option>
+                        <option value="Phugewadi">Phugewadi</option>
+                        <option value="Dapodi">Dapodi</option>
+                        <option value="Bopodi">Bopodi</option>
+                        <option value="Khadki">Khadki</option>
+                        <option value="Range Hills">Range Hills</option>
+                        <option value="Shivaji Nagar">Shivaji Nagar</option>
+                        <option value="Civil Court">Civil Court</option>
+                        <option value="Budhwar Peth">Budhwar Peth</option>
+                        <option value="Mandai">Mandai</option>
+                        <option value="Swargate">Swargate</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination Station:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select Destination</option>
+                        <option value="PCMC Bhavan">PCMC Bhavan</option>
+                        <option value="Sant Tukaram Nagar">Sant Tukaram Nagar</option>
+                        <option value="Kasarwadi">Kasarwadi</option>
+                        <option value="Phugewadi">Phugewadi</option>
+                        <option value="Dapodi">Dapodi</option>
+                        <option value="Bopodi">Bopodi</option>
+                        <option value="Khadki">Khadki</option>
+                        <option value="Range Hills">Range Hills</option>
+                        <option value="Shivaji Nagar">Shivaji Nagar</option>
+                        <option value="Civil Court">Civil Court</option>
+                        <option value="Budhwar Peth">Budhwar Peth</option>
+                        <option value="Mandai">Mandai</option>
+                        <option value="Swargate">Swargate</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tickets">Number of Tickets:</label>
+                    <input type="number" id="tickets" name="tickets" min="1" required>
+                </div>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <section id="map" class="map-section">
+            <h2>Pune Metro Map</h2>
+            <p>Explore the Blue and Purple lines of Pune Metro below:</p>
+            <img src="metro_map.jpg" alt="Pune Metro Map - Blue and Purple Line" class="map-img">
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:support@aaplimetro.in">support@aaplimetro.in</a></p>
+            <p>Phone: <a href="tel:-">+91-##########</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p> AAPLI METRO, PUNE METRO </p>
+    </footer>
+</body>
+
+</html>
