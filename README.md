@@ -7,7 +7,7 @@ This project is a fully functional and dynamic web-based metro ticket booking sy
 - **Frontend**: HTML, CSS, JavaScript  
 - **Backend**: PHP  
 - **Database**: MySQL  
-- **Hosting**: AWS EC2 (Linux - Ubuntu)  
+- **Hosting**: AWS EC2 (Linux)  
 - **Web Server**: Nginx  
 
 ---
@@ -25,7 +25,7 @@ This project is a fully functional and dynamic web-based metro ticket booking sy
 ## ☁️ Deployment on AWS EC2 (LEMP Stack)
 
 ### 1. Launch EC2 Instance  
-OS: **Ubuntu (Linux)**
+OS: **Linux**
 - Open the following ports in your security group:
   - `22` (SSH)
   - `80` (HTTP)
