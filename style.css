@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+    color: #222;
+}
+
+header {
+    background: #0d47a1;
+    color: white;
+    padding: 1.5em 1em;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    height: 70px; /* Bigger size */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hero section with blurred background */
+#hero {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('metro_hero.jpeg') center/cover no-repeat;
+    filter: blur(5px) brightness(0.6);
+    z-index: -1;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    z-index: 1;
+}
+
+#hero p {
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+/* Booking, Map, Contact sections */
+.booking-section,
+.map-section,
+.contact-section {
+    background: white;
+    padding: 3em 1.5em;
+    margin: 2em auto;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Improved form styling */
+form.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+button {
+    background: #0d47a1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+.map-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #0d47a1;
+    color: white;
+}
