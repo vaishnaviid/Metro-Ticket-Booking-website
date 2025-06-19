@@ -50,7 +50,7 @@ To add images from local to EC2 server use scp command.
 
 ### 4. SSH into Instance  
 ```bash
-ssh -i "your-key.pem" ubuntu@your-ec2-public-ip
+ssh -i "your-key.pem" ec2-user@your-ec2-public-ip
 
 
 
